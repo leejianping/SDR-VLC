@@ -7,6 +7,7 @@ Transmitter: Arduino + Grove MOSFET +LED
 Receiver: PD(PDA 36A) + USRP + Matlab
 
 USRP:
+![]()
 
 
 
