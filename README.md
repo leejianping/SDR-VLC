@@ -9,7 +9,7 @@ Receiver: PD(PDA 36A) + USRP + Matlab
 USRP:
 ![](https://github.com/leejianping/SDR-VLC/blob/master/Screenshot%20from%202016-11-17%2010_21_44.png)
 
-![](https://github.com/leejianping/SDR-VLC/blob/master/Screenshot%20from%202016-11-17%2010_20_16.png)
+![](https://github.com/leejianping/SDR-VLC/blob/master/Screenshot%20from%202016-11-17%2010_18_24.png)
 
 
 
