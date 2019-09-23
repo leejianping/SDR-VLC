@@ -1,0 +1,13 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(7,OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  analogWrite(7,255);  //发1
+  delayMicroseconds(500);  //延时500us
+  analogWrite(7,0);    //发0
+  delayMicroseconds(500);  //延时500us
+
+}
