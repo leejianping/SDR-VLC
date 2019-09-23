@@ -1,0 +1,44 @@
+const char message[] = {"Hello!"};
+const byte outPin = 13;
+const int beginDelay = 100;
+const int zeroDelay = 50;
+const int oneDelay = 25;
+const int bitDelay = 10;
+
+
+void setup() {
+ Serial.begin(9600);
+ pinMode(outPin,OUTPUT);
+}
+
+void loop() {
+ digitalWrite(outPin,LOW);
+ delay(beginDelay);
+ Serial.println("Delay");
+ for(int x = 0; x < sizeof(message) - 1; x++) {
+   char a = message[x];
+   Serial.print(x);
+   Serial.print(" ");
+   Serial.println(a);
+   for (int y = 0; y < 8; y++){
+     byte z = (a >> y) & 1;
+     Serial.print(z);
+     digitalWrite(outPin,HIGH);
+     delay(bitDelay);
+     digitalWrite(outPin,LOW);
+     if (z == 0){
+       delay(zeroDelay);
+     }
+     else {
+       delay(oneDelay);
+     }
+   }
+   Serial.println();
+ }
+ digitalWrite(outPin,HIGH);
+ delay(bitDelay);
+ digitalWrite(outPin,LOW);
+ Serial.println("Finished.");
+ while(1){
+ }
+}
